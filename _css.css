@@ -1,0 +1,74 @@
+@charset "utf8";
+.viadão {
+    color: pink;
+}
+.merda{
+    color: red;
+}
+body{
+    background-image: url(_fundo.png);
+    background-color: rgb(13, 255, 0);
+}
+h1{
+    color: blue;
+    }
+.sparkle-text {
+  font-size: 60px; /* Tamanho da fonte do h1 */
+  color: black; /* Cor do texto */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff00a2, 0 0 15px #ff00a2, 0 0 20px #ff00a2, 0 0 25px #ff00a2, 0 0 30px #ff00a2, 0 0 35px #ff00a2; /* Cria o efeito de brilho pulsante */
+  animation: sparkles 1s infinite alternate; /* Animação do brilho pulsante */
+}
+
+@keyframes sparkles {
+  to {
+    text-shadow: none; /* Remove o brilho no final da animação */
+  }
+}
+.tolete {
+  width: 20px; /* Largura do tolete */
+  height: 20px; /* Altura do tolete */
+  background-color: brown; /* Cor do tolete */
+  position: absolute;
+  top: -20px; /* Posição inicial do tolete acima da tela */
+  left: 50%; /* Posição inicial do tolete no centro da tela */
+  animation: quedaTolete 2s forwards; /* Aplica a animação de queda ao tolete */
+}
+.content{
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes quedaTolete {
+  to {
+    top: calc(100vh - 20px); /* Posição final do tolete na parte inferior da tela */
+    opacity: 0; /* Opacidade do tolete quando atinge o chão */
+  }
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.tolete {
+  width: 20px; /* Diâmetro do tolete */
+  height: 20px; /* Diâmetro do tolete */
+  border-radius: 50%; /* Forma redonda */
+  background-color: brown; /* Cor do tolete */
+  position: absolute;
+  top: -20px; /* Posição inicial do tolete acima da tela */
+  left: 50%; /* Posição inicial do tolete no centro da tela */
+  animation: quedaTolete 2s infinite linear; /* Aplica a animação de queda infinitamente */
+}
+
+@keyframes quedaTolete {
+  0% {
+    top: -1000px; /* Posição inicial do tolete acima da tela */
+  }
+  100% {
+    top: 100vh; /* Posição final do tolete na parte inferior da tela */
+  }
+}
+.viado{
+    align-content: center;
+}
